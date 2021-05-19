@@ -1,7 +1,51 @@
-nav{
-  text-align: left;
-  color: black;
-  list-style-type: none;
-  margin: 10px;
+*{
+  box-sizing: border-box;
+}
+
+
+td{
+  align: center;
+  padding: 2px;
   border: 1px black dotted;
+}
+
+.navibar {
+  border: 1px black dotted;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+th{
+  align-items: center;
+  border: 1px black dotted;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.hi{
+  width: 10%;
+  margin: 0;
+}
+
+#footer{
+  align: left;
+}
+
+header{
+    text-align: center;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li{
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  border: 1px black dotted;
+  margin-right: 40px;
+  margin-left: 40px;
 }
