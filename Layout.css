@@ -8,56 +8,63 @@ hr{
   background-color: pink;
 }
 
-/*Top Navi Bar*/
+/* Header (Top Navigation Bar) */
 
 .frame{
   width: 100%;
   height: 90px;
-  text-align: justify;
+}
+.frame a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
 }
 
+/* Logo */
 #logo{
-  width: 20%;
+  width: 24%;
   height: 90px;
   float: left;
   align-items: center;
-  margin-left: 20px;
+  margin: 0px 0px 18px 0px;
+  padding: 0;
 }
 
 #logo ul{
   height: 90px;
-  width:auto;
-  border: 1px black dotted;
+  width: auto;
 }
 
 #logo ul li{
   list-style-type: none;
   display: inline;
-  border: 1px black dotted;
   margin: 5px;
   text-align: left;
   color: black;
-  height: 90px;
+  height: auto;
 }
 
-
+/* Name of Hotel */
 #hotel{
-  width: 100px;
-  height: 90px;
+  width: 140px;
+  height: auto;
   margin: 0px;
   padding: 0px;
   float: right;
-  align: center;
+  position: absolute;
 }
 
+/* Navigation Bar */
 #navi{
-  width: 65%;
+  width: 76%;
   height: 90px;
   float: right;
 }
 
 #navi ul{
   height: 90px;
+  margin: 40px 80px 0px 20px;
 }
 
 #navi ul li{
@@ -65,27 +72,95 @@ hr{
   list-style-type: none;
   margin: 40px;
   padding: 1px;
-  border: 1px black dotted;
   text-align: center;
   color: black;
 }
 
-/* footer border --> visualisation */
-
+/* Footer */
 footer{
   width: 100%;
   height: auto;
-  display: inline-block;
+  color: black;
 }
+
+footer h4{
+    margin: 8px 0;
+}
+
+/*Abt Grand Oceania Harbourfont*/
 
 #general{
   float: left;
+  margin: 0px 135px;
 }
+
+#general ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+#general ul li{
+  padding: 10px 0px;
+}
+
+#general a{
+  color: black;
+  text-decoration: none;
+}
+
+/*Visitor Information*/
 
 #info{
   float: left;
+  margin: 0px 135px;
 }
+
+#info ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+#info ul li{
+  padding: 10px 0px;
+}
+
+#info a{
+  color: black;
+  text-decoration: none;
+}
+
+/* Contact Us & Connect With Us*/
 
 #support{
   float: left;
+  margin: 0px 135px;
+}
+
+#support ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+#support ul li{
+  padding: 10px 0px;
+}
+
+#support a{
+  color: black;
+  text-decoration: none;
+}
+
+.fab{
+  font-size: 45px;
+  padding: 0px 15px;
+}
+
+.fab:hover {
+    opacity: 0.7;
 }
