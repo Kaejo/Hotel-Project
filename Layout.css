@@ -1,4 +1,3 @@
-
 *{
   box-sizing: border-box;
 }
@@ -7,27 +6,6 @@ hr{
   width: 100%;
   border: 2px pink solid;
   background-color: pink;
-}
-
-/* footer border --> visualisation */
-td{
-  align: center;
-  padding: 2px;
-  border: 1px black dotted;
-}
-
-th{
-  border: 1px black dotted;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
-
-#footer{
-  align: left;
-  align: center;
-  padding: 2px;
-  border: 1px black dotted;
 }
 
 /*Top Navi Bar*/
@@ -66,7 +44,7 @@ th{
 #hotel{
   width: 100px;
   height: 90px;
-  margin-left: 0px;
+  margin: 0px;
   padding: 0px;
   float: right;
   align: center;
@@ -91,30 +69,23 @@ th{
   text-align: center;
   color: black;
 }
-/*
-ul li{
-  display: inline;
-  list-style-type: none;
-  margin: 0;
-  padding: 10px;
-}
 
-.navi{
-  float: right;
-  display: inline-block;
-  width: 100px;
-  height: 30px;
-  border: 1px black dotted;
-  margin-right: 40px;
-  margin-left: 40px;
-  padding: 0%;
-}
+/* footer border --> visualisation */
 
-#logo{
-  padding: 0;
-  margin: 0 auto;
-  border: 1px black dotted;
+footer{
   width: 100%;
   height: auto;
+  display: inline-block;
 }
-*/
+
+#general{
+  float: left;
+}
+
+#info{
+  float: left;
+}
+
+#support{
+  float: left;
+}
