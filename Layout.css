@@ -1,51 +1,120 @@
+
 *{
   box-sizing: border-box;
 }
 
+hr{
+  width: 100%;
+  border: 2px pink solid;
+  background-color: pink;
+}
 
+/* footer border --> visualisation */
 td{
   align: center;
   padding: 2px;
   border: 1px black dotted;
 }
 
-.navibar {
-  border: 1px black dotted;
-  margin-right: 40px;
-  margin-left: 40px;
-}
-
 th{
-  align-items: center;
   border: 1px black dotted;
   padding-left: 60px;
   padding-right: 60px;
 }
 
-.hi{
-  width: 10%;
-  margin: 0;
-}
 
 #footer{
   align: left;
+  align: center;
+  padding: 2px;
+  border: 1px black dotted;
 }
 
-header{
-    text-align: center;
+/*Top Navi Bar*/
+
+.frame{
+  width: 100%;
+  height: 90px;
+  text-align: justify;
 }
 
-ul{
+#logo{
+  width: 20%;
+  height: 90px;
+  float: left;
+  align-items: center;
+  margin-left: 20px;
+}
+
+#logo ul{
+  height: 90px;
+  width:auto;
+  border: 1px black dotted;
+}
+
+#logo ul li{
+  list-style-type: none;
+  display: inline;
+  border: 1px black dotted;
+  margin: 5px;
+  text-align: left;
+  color: black;
+  height: 90px;
+}
+
+
+#hotel{
+  width: 100px;
+  height: 90px;
+  margin-left: 0px;
+  padding: 0px;
+  float: right;
+  align: center;
+}
+
+#navi{
+  width: 65%;
+  height: 90px;
+  float: right;
+}
+
+#navi ul{
+  height: 90px;
+}
+
+#navi ul li{
+  display: inline;
+  list-style-type: none;
+  margin: 40px;
+  padding: 1px;
+  border: 1px black dotted;
+  text-align: center;
+  color: black;
+}
+/*
+ul li{
+  display: inline;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 
-ul li{
+.navi{
+  float: right;
   display: inline-block;
   width: 100px;
   height: 30px;
   border: 1px black dotted;
   margin-right: 40px;
   margin-left: 40px;
+  padding: 0%;
 }
+
+#logo{
+  padding: 0;
+  margin: 0 auto;
+  border: 1px black dotted;
+  width: 100%;
+  height: auto;
+}
+*/
