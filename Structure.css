@@ -1,89 +1,234 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1">
-		<!-- Responsive Navigation -->
-		<link rel="stylesheet" type="text/css" href="Homepage.css">
-		<!-- Responsive Footer -->
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+/* Responsive Navigation Menu */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Segoe UI;
+}
 
-		<title></title>
-  </head>
-  <style>
-  </style>
-  <body>
+#main {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
 
-	<div class="resultContainer">
-	<div style="display: inline;">
-		<div class="img-wrapper">
-			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img class="logoImage" src="review.png" alt="hotel-name" width="60" height="60px">
-		</div>
-		<div class="content-wrap">
-			<span class="hotelName">Grand Oceania</span>
-			<br/>
-			<span class="hotelName1">HarbourFront</span>
-		</div>
-	<!-- </div> -->
-		<div class="hotelName"></div>
-		<nav>
-			<ul>
-				<li> <a href="#"> Home </a></li>
-				<li> <a href="#"> Rooms </a></li>
-				<li> <a href="#"> Facilities </a></li>
-				<li> <a href="#"> Promotions </a></li>
-				<li> <a href="#"> Around Us </a></li>
-				<li> <a href="#"> FAQ </a></li>
-			</ul>
-		</div>
-	</div>
-	<ol class="breadcrumb">
-			<li class="breadcrumb-item"> <a href="#"> Home </a></li>
-	</ol>
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  line-height: 80px;
+}
 
-<!--Responsive Footer -->
-		<br/>
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col">
-            <h4> About Grand Oceania HarbourFront </h4>
-            <ul>
-              <li> <a href="#"> Home </a> </li>
-              <li> <a href="#"> Rooms </a> </li>
-              <li> <a href="#"> Facilities </a> </li>
-              <li> <a href="#"> Promotions </a> </li>
-            </ul>
-          </div>
-          <br/>
-          <div class="footer-col">
-            <h4> Visitors Information </h4> &nbsp;
-            <ul>
-              <li> <a href="#"> Frequently Asked Questions </a> </li>
-              <li> <a href="#"> Getting There </a> </li>
-              <li> <a href="#"> Around Us </a> </li>
-            </ul>
-          </div>
-          <br/>
-          <div class="footer-col">
-            <h4> Contact Us </h4> &nbsp;
-            <ul>
-              <li> <a href="#"> Enquiry </a> </li>
-              <li> <a href="#"> Contact Us @ +65 6060 7071 </a> </li>
-              <li> <a href="#" style="text-transform:lowercase"> enquiries@grandoceaniaharbourfront.com </a> </li>
-            </ul>
-          </div>
-          <br/>
-          <div class="footer-col">
-            <h4> Connect with Us </h4> &nbsp;
-            <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-  <body>
-</html>
+nav ul {
+  float: right;
+  margin-right: 30px;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.8s all;
+}
+
+nav ul li:hover {
+  background-color: #D3D3D3;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+}
+
+/*
+hr.solid {
+  border-top: 5px solid #bbb;
+} */
+
+/*Text Alignment*/
+.resultContainer {
+  width: 100%;
+  position: relative;
+  left: 0;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: black solid 1px;
+}
+
+.hotelImage,
+.hotelName,
+.hotelName1 {
+  margin-left: 20px;
+}
+
+.content-wrap,
+.img-wrapper {
+  display: inline-block;
+}
+
+/* Text over Image*/
+.container1 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+}
+
+/* BreadCrumbs Navigation */
+.breadcrumb{
+  padding: 10px 16px;
+  list-style: none;
+  background-color: white;
+  }
+
+.breadcrumb-item{
+  display: inline;
+  font-size: 18px;
+  }
+
+.breadcrumb li+li:before{
+  padding: 8px;
+  color: black;
+  content: ">>";
+}
+
+.breadcrumb-item a{
+  color: #2e4053;
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover{
+  color: black;
+}
+
+/* Latest Deals and Offers */
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 8px;
+}
+
+/* Clearfix (clear floats) */
+.side::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*responsive footer*/
+body {
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: white;
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: black;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #E8E8E8;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: blue;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: blue;
+  background-color: #ffffff;
+}
+
+/*Responsive*/
+@media(max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
