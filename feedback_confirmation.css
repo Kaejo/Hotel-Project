@@ -39,6 +39,11 @@ main h3 {
   margin-top: 20px;
 }
 
+.button a {
+  color: white;
+  text-decoration: none;
+}
+
 .button {
   background-color: dodgerblue;
   border: none;
