@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width-device-width, initial-scale=1">
+		<!-- Responsive Navigation -->
+		<link rel="stylesheet" type="text/css" href="Structure.css">
+		<!-- Responsive Footer -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<!---->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		<!--Tab Icon-->
+		<link rel="icon" type="text/css" href="images/logo.png">
+		<!--Own webpage CSS link-->
+		<link rel="stylesheet" type="text/css" href="">
+		<title>Grand Oceania Harbourfont</title>
+  </head>
+  <style>
+
+    /* Responsive Navigation Menu */
+* {
+  box-sizing: border-box;
+  font-family: Segoe UI, times new roman;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: black !important;
+}
+/* Top of webpage (navigation) */
+header{
+  background-color: black;
+  position: sticky;
+  top: 0%;
+  z-index: 1;  /* will be displayed in front of other elements*/
+}
+/* Content word color */
+main{
+  color: white;
+}
+
+
+/* Logo */
+#logo{
+  height: 80px;
+}
+
+#logo a img{
+  display: block;
+  margin: auto;
+  padding: 12px;
+}
+
+
+/* Navigation Bar */
+#navi{
+  width: 100%;
+}
+
+#navi ul{
+  width: 100%;
+}
+
+/* #navi ul li{
+  list-style-type: none;
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+  width: auto;
+  height: 35px;
+} */
+
+#navi ul li:hover {
+  background-color: #d3d3d3a1;
+  border-radius: 20px;
+}
+
+#navi ul li a{
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* Horizontal Line */
+hr{
+  width: 100%;
+  border-top: 3px solid white;
+}
+
+/* BreadCrumbs Navigation */
+.breadcrumb{
+  padding: 10px 16px !important;
+  list-style: none;
+}
+
+.breadcrumb-item{
+  display: inline;
+  font-size: 14px;
+}
+
+/*when add new list, it will auto add and show in the webpage*/
+.breadcrumb li+li:before{
+  padding: 8px;
+  color: white;
+  /* content: ">"; */
+}
+
+.breadcrumb-item a{
+  color: rgba(255, 255, 255, 0.925);
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover{
+  color: white;
+}
+
+/*Back to Top button*/
+.top{
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin: 1% 0%;
+  text-align: center;
+  border-radius: 60%;
+  border: 1px solid grey;
+  color: white;
+  text-decoration: none;
+}
+
+.top:hover{
+  background-color: #cdaa7d;
+  border: none;
+}
+
+/*responsive footer*/
+footer{
+  background-color: black;
+  color: white;
+  padding: 30px 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  list-style: none;
+}
+
+/*
+Content for About Grand Oceania HarbourFront,
+Visitors Information and Contact Us
+*/
+.content h4 {
+  font-size: 18px;
+	color: white;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.content h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.content ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.content ul li a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  display: block; /* flex */
+  transition: all 0.3s ease;
+}
+
+.content ul li a:hover {
+  color: rgba(255, 255, 255, 0.849);
+  padding-left: 8px;
+}
+
+/* Abt Grand Oceania Harbourfront*/
+.general {
+  width: 32%;
+  padding: 0 15px;
+}
+
+/* Visitor Information and Contact Us*/
+.visitor-info {
+  width: 26%;
+  padding: 0 15px;
+}
+
+.contact-us {
+  width: 26%;
+  padding: 0 15px;
+}
+
+/*Connect with Us*/
+.social-links{
+  width: 16%;
+  padding: 0 15px;
+}
+
+.social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #E8E8E8;
+  margin: 0 5px 0 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: blue;
+  transition: all 0.5s ease;
+  font-size: 25px;
+}
+
+.social-links a:hover {
+  color: blue;
+  background-color: #ffffff;
+}
+
+/* Copyright */
+.copyright {
+  width: 32%;
+  padding: 12px;
+}
+
+.contents {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+/*Responsive*/
+@media(max-width: 1180px) {
+
+	.show {
+		margin-top: 50px;
+	}
+}
+
+@media(max-width: 1150px) {
+
+	.show {
+		margin-top: 50px;
+	}
+}
+
+@media(max-width: 1120px) {
+  .general{
+    width: 40%;
+  }
+
+  .visitor-info{
+    width: 30%;
+  }
+
+  .contact-us{
+    width: 30%;
+  }
+
+  .social-links{
+    width: 25%;
+    margin-top: 25px;
+    /*
+    margin-left: auto;
+    margin-right: 5%; */ /* If these portions remain, it will affect the alignment of the different footer's sections */
+  }
+
+  .copyright {
+    width: 40%;
+    margin-right: 10%;
+    margin-left: 15%;
+  }
+
+	.show {
+		margin-top: 50px;
+	}
+
+}
+
+@media(max-width: 1110px) {
+
+	.show {
+		margin-top: 50px;
+	}
+}
+
+@media(max-width: 1099px) {
+
+	.show {
+		margin-top: 50px;
+	}
+}
+
+@media(max-width: 1080px) {
+
+	.show {
+		margin-top: 50px;
+	}
+}
+
+@media(max-width: 1050px) {
+  .general{
+    width: 45%;
+    margin-left: 10%;
+    margin-bottom: 30px;
+  }
+
+  .visitor-info{
+    width: 40%;
+    margin-left: 5%;
+    margin-bottom: 30px;
+  }
+
+  .contact-us{
+    width: 45%;
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+
+  .social-links{
+    width: 40%;
+    margin: 0;
+  }
+
+  .copyright {
+    width: 40%;
+    margin-right: 28%;
+    margin-left: 10%;
+  }
+
+	.show {
+		margin-top: 50px;
+	}
+
+}
+
+@media(max-width: 1040px) {
+
+	.show {
+		margin-top: 50px;
+	}
+}
+
+@media(max-width: 1020px) {
+
+	.show {
+		margin-top: 50px;
+	}
+}
+
+@media(max-width: 1008px) {
+
+	.show {
+		margin-top: 50px;
+	}
+}
+
+@media(max-width: 1000px) {
+
+	.show {
+		margin-top: 50px;
+	}
+}
+
+@media(max-width: 900px) {
+
+	.show {
+		margin-top: 50px;
+	}
+}
+
+@media(max-width: 800px) {
+
+	.show {
+		margin-top: 50px;
+	}
+}
+
+@media(max-width: 707px) {
+
+  .copyright {
+    width: 40%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+	.show{
+		margin-top: 10%;
+	}
+
+}
+
+@media(max-width: 620px) {
+  .general{
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  .visitor-info{
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  .contact-us{
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  .social-links{
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  .copyright {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+
+	.show{
+	  margin-top: 10%;
+	}
+
+}
+
+/* @media(max-width: 767px) {
+	.collapse-navbar-collapse {
+		top: -10px;
+	}
+} */
+
+  </style>
+  <body>
+		<!--Responsive Header -->
+		<header>
+			<div class="container" id="logo">
+				<a href="#" class="navbar-brand navbar-expand-md"><img src="Hotel-logo.jpeg" alt=""></a>
+
+			</div>
+			<nav class="navbar navbar-expand-md">
+				<div id="navi">
+
+					<button class="navbar-toggler" type="button" data-bs-togggle="collapse" data-bs-target="#navbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse-navbar-collapse" id="navbar">
+						<ul class="navbar-nav nav-fill align-middle" >
+							<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+							<li class="nav-item"><a href="#room" class="nav-link">Rooms</a></li>
+							<li class="nav-item"><a href="#facility" class="nav-link">Facilities</a></li>
+							<li class="nav-item"><a href="#promo" class="nav-link">Promotion</a></li>
+							<li class="nav-item"><a href="#around" class="nav-link">Around Us</a></li>
+							<li class="nav-item"><a href="#faq" class="nav-link">FAQs</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- <nav>
+				Back to Top Destination
+				<a id="top"></a>
+				<div class="frame">
+					<div id="logo">
+						<a href="#"><img src="images/Hotel-logo.png" alt="hotel logo"></a>
+					</div>
+					<div id="navi">
+						<ul>
+							<li class="navi"><a href="#">Home</a></li>
+							<li class="navi"><a href="#">Rooms</a></li>
+							<li class="navi"><a href="#">Facilities</a></li>
+							<li class="navi"><a href="#">Promotions</a></li>
+							<li class="navi"><a href="#">Around Us</a></li>
+							<li class="navi"><a href="#">FAQs</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="show">
+					<hr/>
+					<ol class="breadcrumb">
+							<li class="breadcrumb-item"> <a href="#"> Home </a></li>
+					</ol>
+					<hr/>
+				</div>
+			</nav> -->
+		</header>
+    <!-- <div class="show"> -->
+      <hr/>
+      <ol class="breadcrumb">
+          <li class="breadcrumb-item"> <a href="#">Home &nbsp; > <a href="#"> &nbsp; Facility &nbsp; > </a> <a href="#"> &nbsp; Others</a> </a></li>
+      </ol>
+      <hr/>
+    </div>
+		<main>
+			<!-- Input your Content -->
+
+			<!--Back to Top Button-->
+			<a href="#top" class="top">^</a>
+		</main>
+<!--Responsive Footer -->
+		<hr>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="general">
+						<div class="content">
+							<h4> About Grand Oceania HarbourFront </h4>
+	            <ul>
+	              <li> <a href="#"> Home </a> </li>
+	              <li> <a href="#"> Rooms </a> </li>
+	              <li> <a href="#"> Facilities </a> </li>
+	              <li> <a href="#"> Promotions </a> </li>
+	            </ul>
+						</div>
+          </div>
+          <br/>
+          <div class="visitor-info">
+						<div class="content">
+							<h4> Visitors Information </h4>
+							<ul>
+	              <li> <a href="#"> Frequently Asked Questions </a> </li>
+	              <li> <a href="#"> Getting There </a> </li>
+	              <li> <a href="#"> Around Us </a> </li>
+	            </ul>
+						</div>
+          </div>
+          <br/>
+					<div class="contact-us">
+						<div class="content">
+							<h4>Contact Us</h4>
+			        <ul>
+			          <li><a href="#">Enquiry</a></li>
+			          <li><a href="tel:+65 6060 7071">+65 6060 7071</a></li>
+			          <li><a href="mailto:enquries@grandoceaniaharbourfront.com">enquries@grandoceaniaharbourfront.com</a></li>
+			        </ul>
+						</div>
+					</div>
+					<br/>
+          <div class="social-links">
+						<div class="content">
+							<h4> Connect with Us </h4>
+	            <a href="#"><i class="fab fa-facebook-f"></i></a>
+	            <a href="#" style="color: #D6249F"><i class="fab fa-instagram"></i></a>
+	            <a href="#" style="color: red"><i class="fab fa-youtube"></i></a>
+						</div>
+					</div>
+					<br/>
+					<div class="copyright">
+						<div class="contents">
+							<p> &copy Copyright 2021 Grand Oceania HarbourFront
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!---->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <body>
+</html>
