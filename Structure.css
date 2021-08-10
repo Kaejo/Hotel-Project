@@ -1,4 +1,4 @@
-/* Responsive Navigation Menu */
+  /* Responsive Navigation Menu */
 * {
   box-sizing: border-box;
   font-family: Segoe UI, times new roman;
@@ -11,18 +11,20 @@ body{
 /* Top of webpage (navigation) */
 header{
   background-color: black;
-  position: sticky; /* stick to the top of the page */
-  top: 0%;
-  z-index: 1;  /* will be displayed in front of other elements*/
 }
+
 /* Content word color */
 main{
   color: white;
 }
 
+/* Set bootstrap container to 100% width everytime */
+.container{
+  min-width: 100% !important
+}
+
 /* Logo */
 #logo{
-  width: 90%;
   height: 80px;
 }
 
@@ -53,8 +55,8 @@ main{
   font-weight: 500;
 }
 
-button .navbar-toggler-icon{
-  background-color: white;
+.fa-bars{
+  color: white;
 }
 
 /* Horizontal Line */
@@ -93,7 +95,7 @@ hr{
 }
 
 /*Back to Top button*/
-.top-btn {
+.top-btn{
   font-size: 40px;
   width: 50px;
   height: 50px;
@@ -117,16 +119,7 @@ section {
 	padding: 20px 0;
 }
 
-section .section-title {
-	text-align: center;
-	color: #007b5e;
-	margin-bottom: 50px;
-	text-transform: uppercase;
-}
-
 #footer {
-	background: black !important;
-	color: white !important;
 	margin-top: 50px;
 }
 
@@ -139,7 +132,6 @@ section .section-title {
 #footer a {
 	color: #ffffff;
 	text-decoration: none !important;
-	background-color: transparent;
 	-webkit-text-decoration-skip: objects;
 }
 
@@ -190,58 +182,19 @@ section .section-title {
 	font-weight: 700;
 }
 
-/* responsive boostrap footer */
-@media (max-width:767px){
-#footer h5 {
-		padding-left: 0;
-		border-left: transparent;
-		padding-bottom: 0px;
-		margin-bottom: 10px;
-	}
+/* Responsive Footer - Gotten viewport sizes from developer console */
+/* Tablet size */
+@media (max-width: 768px) {
+  /* change content be displayed vertically */
+  .col-md-4{
+    width: 100% !important;
+  }
 }
 
-@media (max-width:576px) {
-	hr{
-	  width: 130% !important;
-	}
-
-}
-
-/*iphone 6/7/8 plus (vertical view) */
-@media (max-width:414px) {
-	#logo {
-		margin-left: 50px;
-	}
-
-	.top-btn {
-		margin: 0 -45px 0 0;
-	}
-}
-
-/*iphone 6/7/8 plus (horizontal view) */
-@media (max-width:736px) {
-	#logo {
-		margin-left: 80px;
-	}
-
-	hr {
-		width: 105% !important;
-	}
-}
-
-/*ipad (vertical view) responsive */
-@media (max-width:768px) {
-
-	#logo {
-		margin-left: 70px;
-	}
-
-	hr{
-	  width: 118% !important;;
-	}
-
-	.top-btn {
-		margin: 0 -49px 0 0;
-	}
-
+/* Mobile L size */
+@media (max-width: 425px) {
+  /* change the width of image to fit screen size */
+  #logo a img{
+    width: 100%;
+  }
 }
