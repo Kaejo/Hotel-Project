@@ -93,260 +93,155 @@ hr{
 }
 
 /*Back to Top button*/
-.top{
+.top-btn {
   font-size: 40px;
   width: 50px;
   height: 50px;
   float: right;
-  margin: 1% 0%;
+  margin: 1%;
   text-align: center;
-  border-radius: 60%;
   border: 1px solid grey;
   color: white;
   text-decoration: none;
 }
 
-.top:hover{
+.top-btn:hover{
   background-color: #cdaa7d;
   color: white;
   border: none;
 }
 
-/*responsive footer*/
-footer{
-  color: white;
-  padding: 30px 0;
+/* Responsive Bootstrap Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+	padding: 20px 0;
 }
 
-.footer-container {
-  width: 90%;
-  margin-left: auto;
+section .section-title {
+	text-align: center;
+	color: #007b5e;
+	margin-bottom: 50px;
+	text-transform: uppercase;
 }
 
-.row {
-  margin: 0 !important;
+#footer {
+	background: black !important;
+	color: white !important;
+	margin-top: 50px;
 }
 
-footer ul {
-  list-style: none;
+#footer h5{
+  padding-left: 10px;
+	padding-bottom: 6px;
+	margin-bottom: 20px;
+	color:#ffffff;
+}
+#footer a {
+	color: #ffffff;
+	text-decoration: none !important;
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
 }
 
-
-/*
-Content for About Grand Oceania HarbourFront,
-Visitors Information and Contact Us
-*/
-.content h4 {
-  font-size: 18px;
-  text-transform: capitalize;
-  margin-bottom: 30px;
-  font-weight: 500;
-  position: relative;
+#footer ul.social li{
+	padding: 3px 0;
 }
 
-.content h4::before{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  background-color: #e91e63;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
+#footer ul.social li a i {
+	margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
 }
 
-.content ul li:not(:last-child) {
-  margin-bottom: 20px;
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
 }
 
-.content ul li a {
-  font-size: 16px;
-  color: white;
-  text-decoration: none;
-  font-weight: 300;
-  transition: all 0.3s ease;
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
 }
 
-.content ul li a:hover {
-  color: rgba(255, 255, 255, 0.849);
-  padding-left: 6px;
+#footer ul.social li a:hover{
+	color:#eeeeee;
 }
 
-.list-group-item{
-  background-color: inherit !important;
-  padding: 0 !important;
-  padding-left: 15px !important;
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
 }
 
-.social-links a{
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: #E8E8E8;
-  margin: 0 5px 0 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: blue;
-  transition: all 0.5s ease;
-  font-size: 25px;
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
 }
 
-.social-links a:hover {
-  color: blue;
-  height: 43px;
-  width: 43px;
-  text-align: center;
-  background-color: #ffffff;
+#footer ul.quick-links li a i{
+	margin-right: 5px;
 }
 
-/* Copyright */
-.copyright {
-  width: 32%;
-  margin-top: 1%;
-  padding: 12px;
-  font-size: 12px;
+#footer ul.quick-links li:hover a i {
+	font-weight: 700;
 }
 
-/*Responsive*/
-/* @media(max-width: 1120px) {
-  .general{
-    width: 40%;
-  }
+/* responsive boostrap footer */
+@media (max-width:767px){
+#footer h5 {
+		padding-left: 0;
+		border-left: transparent;
+		padding-bottom: 0px;
+		margin-bottom: 10px;
+	}
+}
 
-  .visitor-info{
-    width: 30%;
-  }
-
-  .contact-us{
-    width: 30%;
-  }
-
-  .social-links{
-    width: 25%;
-    margin-top: 25px; */
-    /*
-    margin-left: auto;
-    margin-right: 5%; */ /* If these portions remain, it will affect the alignment of the different footer's sections */
-  /* }
-
-  .copyright {
-    width: 40%;
-    margin-right: 10%;
-    margin-left: 15%;
-  }
+@media (max-width:576px) {
+	hr{
+	  width: 130% !important;
+	}
 
 }
 
-@media(max-width: 1050px) {
-  .general{
-    width: 45%;
-    margin-left: 10%;
-    margin-bottom: 30px;
-  }
+/*iphone 6/7/8 plus (vertical view) */
+@media (max-width:414px) {
+	#logo {
+		margin-left: 50px;
+	}
 
-  .visitor-info{
-    width: 40%;
-    margin-left: 5%;
-    margin-bottom: 30px;
-  }
-
-  .contact-us{
-    width: 45%;
-    margin-left: 10%;
-    margin-right: 5%;
-  }
-
-  .social-links{
-    width: 40%;
-    margin: 0;
-  }
-
-  .copyright {
-    width: 40%;
-    margin-right: 28%;
-    margin-left: 10%;
-  }
-
+	.top-btn {
+		margin: 0 -45px 0 0;
+	}
 }
 
-@media(max-width: 707px) {
+/*iphone 6/7/8 plus (horizontal view) */
+@media (max-width:736px) {
+	#logo {
+		margin-left: 80px;
+	}
 
-  .copyright {
-    width: 40%;
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-
+	hr {
+		width: 105% !important;
+	}
 }
 
-@media (max-width: 768px) {
-  .footer-container{
-    margin: auto;
-  }
+/*ipad (vertical view) responsive */
+@media (max-width:768px) {
 
-  .general{
-    width: 50%;
-    margin: 0% 5% 8% 5%;
-  }
+	#logo {
+		margin-left: 70px;
+	}
 
-  .visitor-info{
-    width: 50%;
-    margin: 0% 5% 8% 5%;
-  }
+	hr{
+	  width: 118% !important;;
+	}
 
-  .contact-us{
-    width: 50%;
-    margin: 0% 5% 8% 5%;
-  }
+	.top-btn {
+		margin: 0 -49px 0 0;
+	}
 
-  .social-links{
-    width: 50%;
-    margin: 0% 5% 8% 5%;
-  }
-
-  .copyright {
-    width: 100%;
-  }
-} */
-
-/* Vertical View Port (based off Iphone 6/7/8 Plus) */
-@media (max-width: 430px) {
-
-  .container{
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  #logo a img{
-    width: 325px;
-  }
-
-  .row{
-    display: block !important;
-  }
-
-  .general{
-    width: 100%;
-    margin: 0% 2% 8% 0%;
-  }
-
-  .visitor-info{
-    width: 100%;
-    margin: 0% 2% 8% 0%;
-  }
-
-  .contact-us{
-    width: 100%;
-    margin: 0% 2% 8% 0%;
-  }
-
-  .social-links{
-    width: 100%;
-    margin: 0% 2% 8% 0%;
-  }
-
-  .copyright {
-    width: 100%;
-  }
 }
