@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width-device-width, initial-scale=1">
+	<!-- Responsive Navigation -->
+	<link rel="stylesheet" type="text/css" href="./CSS/Structure.css">
+	<!-- Responsive Footer -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<!--Bootstrap stylesheet-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<!--Tab Icon-->
+	<link rel="icon" type="text/css" href="images/logo.png">
+	<!--Own webpage CSS link-->
+	<link rel="stylesheet" type="text/css" href="./CSS/Room.css">
+	<title>Rooms</title>
+</head>
+<body>
+	<!--Responsive Header -->
+	<header class="sticky-top">
+		<div class="container" id="logo">
+			<a href="Homepage.html" class="navbar-brand navbar-expand-md"><img src="images/Hotel-logo.png" alt=""></a>
+		</div>
+
+		<nav class="navbar navbar-expand-md">
+			<div id="navi">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<i class="fas fa-bars"></i>
+					</button>
+				<div class="navbar-collapse collapse" id="navbar">
+					<ul class="navbar-nav nav-fill align-middle" >
+						<li class="nav-item"><a href="Homepage.html" class="nav-link">Home</a></li>
+						<li class="nav-item"><a href="Room.html" class="nav-link">Rooms</a></li>
+						<li class="nav-item"><a href="Facility.html" class="nav-link">Facilities</a></li>
+						<li class="nav-item"><a href="Promotion.html" class="nav-link">Promotion</a></li>
+						<li class="nav-item"><a href="AroundUs.html" class="nav-link">Around Us</a></li>
+						<li class="nav-item"><a href="FAQs.html" class="nav-link">FAQs</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!--Breadcrumbs-->
+	<hr>
+	<nav style="--bs-breadcrumb-divider: '>';">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="Homepage.html">Home</a></li>
+			<li class="breadcrumb-item"><a href="Room.html">Room</a></li>
+		</ol>
+		</nav>
+	<hr>
+	<main>
+		<!-- Input your Content -->
+		<!-- Input your Content -->
+
+<div class="KeyFeaturesBoxes">
+ <div class="KeyFeaturesHeader">
+	 <h4>Key Features:</h4>
+ </div>
+ <div class="KeyFeatures">
+	 <ul class="boxes">
+		 <li class="Cam">CCTV Protection</li>
+		 <li class="Cam"><img src="images/Room/camicon.png" alt="CCTV"></li>
+	 </ul>
+	 <ul class="boxes">
+		 <li class="Aircon">Full Air-Conditioned</li>
+		 <li class="Aircon"><img src="images/Room/Airconicon.png" alt="aircon"></li>
+	 </ul>
+	 <ul class="boxes">
+		 <li class="Bed">King-Sized Bed</li>
+		 <li class="Bed"><img src="images/Room/bedicon.png" alt="Bed"></li>
+	 </ul>
+	 <div class="SecondHalf">
+	 <ul class="boxes">
+		 <li class="WiFi">High-Speed Wi-Fi</li>
+		 <li class="WiFi"><img src="images/Room/wifiicon.png" alt="WiFi"></li>
+	 </ul>
+
+	 <ul class="boxes">
+		 <li class="Dine">Free Breakfast/Dinner</li>
+		 <li class="Dine"><img src="images/Room/diningicon.png.jpg" alt="Dining"></li>
+	 </ul>
+	 </div>
+ </div>
+</div>
+<div class="dropdown">
+ <button onclick="myFunction()" class="dropbtn">-- Select --</button>
+ <div id="myDropdown" class="dropdown-content">
+	 <a href="#Deluxe">Deluxe Room</a>
+	 <a href="#Premium">Premium Room</a>
+ </div>
+</div>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+ document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+ if (!event.target.matches('.dropbtn')) {
+	 var dropdowns = document.getElementsByClassName("dropdown-content");
+	 //var popup = document.getElementById("RoomDescription");
+	 var i;
+	 for (i = 0; i < dropdowns.length; i++) {
+		 var openDropdown = dropdowns[i];
+		 if (openDropdown.classList.contains('show')) {
+			 openDropdown.classList.remove('show');
+			 //popup.classList.toggle("show");
+
+		 }
+	 }
+ }
+}
+</script>
+ <div class="RoomDescription" id="Deluxe">
+	 <!-- Container for the image gallery -->
+	 <div class="container1">
+
+		 <!-- Full-width images with number text -->
+		 <div class="mySlides">
+			 <div class="numbertext">1 / 4</div>
+				 <img src="images/Room/DeluxeRoom1.jpg" style="width:100%">
+		 </div>
+
+		 <div class="mySlides">
+			 <div class="numbertext">2 / 4</div>
+				 <img src="images/Room/DeluxeRoom2.jpg" style="width:100%">
+		 </div>
+
+		 <div class="mySlides">
+			 <div class="numbertext">3 / 4</div>
+				 <img src="images/Room/DeluxeRoom3.jpg" style="width:100%">
+		 </div>
+
+		 <div class="mySlides">
+			 <div class="numbertext">3 / 4</div>
+				 <img src="images/Room/Bathroom.jpg" style="width:100%">
+		 </div>
+
+		 <!-- Next and previous buttons -->
+		 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		 <!-- Image text -->
+		 <!--<div class="caption-container1">
+			 <p id="caption">Deluxe Room</p>
+		 </div>-->
+
+		 <!-- Thumbnail images -->
+		 <div class="row1">
+			 <div class="column">
+				 <img class="demo cursor" src="images/Room/DeluxeRoom1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+			 </div>
+			 <div class="column">
+				 <img class="demo cursor" src="images/Room/DeluxeRoom2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+			 </div>
+			 <div class="column">
+				 <img class="demo cursor" src="images/Room/DeluxeRoom3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+			 </div>
+			 <div class="column">
+				 <img class="demo cursor" src="images/Room/Bathroom.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+			 </div>
+		 </div>
+	 </div>
+	 <script>
+	 var slideIndex = 1;
+ showSlides(slideIndex);
+
+ // Next/previous controls
+ function plusSlides(n) {
+	showSlides(slideIndex += n);
+ }
+
+ // Thumbnail image controls
+ function currentSlide(n) {
+	showSlides(slideIndex = n);
+ }
+
+ function showSlides(n) {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("demo");
+	//var captionText = document.getElementById("caption");
+	if (n > slides.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = slides.length}
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	}
+	slides[slideIndex-1].style.display = "block";
+	dots[slideIndex-1].className += " active";
+	//captionText.innerHTML = dots[slideIndex-1].alt;
+ }
+ </script>
+		 <div class="desc">
+			 <h3>Deluxe Room</h3>
+			 <div class="header">
+				 <div class="headerbox">
+					<img src="https://image.flaticon.com/icons/png/512/3612/3612197.png" width="200px" width="100px">
+				 	<p>Nett Price from SGD 150/night</p>
+			 </div>
+			 <div class="headerbox">
+				<img src="https://image.flaticon.com/icons/png/512/1077/1077063.png" width="200px" width="100px">
+			 	<p>2 people</p>
+			 </div>
+
+			 </div>
+			 <div class="Details">
+				 <h4>Detailed Information:</h4>
+				 <!--<p>Are you looking for a small vaction spot or a place to stay? Grand Oceania Harbourfont is the choice for you!</p>-->
+				 <p>Suitable for couples who want to enjoy a little stayaction or business travellers who are looking for a short stay.</p>
+				 <ul>
+					 <li>Only a few minutes away from Harbourfont MRT</li>
+					 <li>Comfortable King Size Bed</li>
+					 <li>Comfortable sofa to relax while doing work</li>
+					 <li>Has a 24 inch TV that has many variety of shows and Netflix available for customers </li>
+				 </ul>
+				 <p>What are you waiting for? Many benefits would come when choosing Grand Oceania Harbourfont like enjoying free vouchers when choosing any of our rooms.<a class="btn" href="promotion.html"><b>Learn More</b></a></p>
+			 </div>
+			 <div class="ViewDetails">
+					 <a href="Booking.html"><input type="button" value="Book Now"></a>
+			 </div>
+		 </div>
+	 </div>
+
+	 <div class="RoomDescription2" id="Premium">
+	 <div class="container2">
+
+		 <!-- Full-width images with number text -->
+		 <div class="mySlides1">
+			 <div class="numbertext">1 / 3</div>
+				 <img src="images/Room/PremiumRoom1.jpg" style="width:100%">
+		 </div>
+
+		 <div class="mySlides1">
+			 <div class="numbertext">2 / 3</div>
+				 <img src="images/Room/PremiumRoom2.jpg" style="width:100%">
+		 </div>
+
+		 <div class="mySlides1">
+			 <div class="numbertext">3 / 3</div>
+				 <img src="images/Room/Bathroom.jpg" style="width:100%">
+		 </div>
+
+		 <!-- Next and previous buttons -->
+		 <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+		 <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
+		 <!-- Image text -->
+		 <!--<div class="caption-container1">
+			 <p id="caption">Deluxe Room</p>
+		 </div>-->
+
+		 <!-- Thumbnail images -->
+		 <div class="row2">
+			 <div class="column1">
+				 <img class="demo1 cursor" src="images/Room/PremiumRoom1.jpg" style="width:100%" onclick="currentSlide1(1)" alt="">
+			 </div>
+			 <div class="column1">
+				 <img class="demo1 cursor" src="images/Room/PremiumRoom2.jpg" style="width:100%" onclick="currentSlide1(2)" alt="">
+			 </div>
+			 <div class="column1">
+				 <img class="demo1 cursor" src="images/Room/Bathroom.jpg" style="width:100%" onclick="currentSlide1(3)" alt="">
+			 </div>
+		 </div>
+	 </div>
+	 <script>
+	 var slideIndex1 = 1;
+ showSlides1(slideIndex1);
+
+ // Next/previous controls
+ function plusSlides1(n) {
+	showSlides1(slideIndex1 += n);
+ }
+
+ // Thumbnail image controls
+ function currentSlide1(n) {
+	showSlides1(slideIndex1 = n);
+ }
+
+ function showSlides1(n) {
+	var i;
+	var slides1 = document.getElementsByClassName("mySlides1");
+	var dots1 = document.getElementsByClassName("demo1");
+	//var captionText = document.getElementById("caption");
+	if (n > slides1.length) {slideIndex1 = 1}
+	if (n < 1) {slideIndex1 = slides1.length}
+	for (i = 0; i < slides1.length; i++) {
+		slides1[i].style.display = "none";
+	}
+	for (i = 0; i < dots1.length; i++) {
+		dots1[i].className = dots1[i].className.replace(" active1", "");
+	}
+	slides1[slideIndex1-1].style.display = "block";
+	dots1[slideIndex1-1].className += " active1";
+	//captionText.innerHTML = dots1[slideIndex1-1].alt;
+ }
+ </script>
+		 <div class="desc">
+				 <h3>Preimum Room</h3>
+				 <div class="header">
+					 <div class="headerbox">
+						<img src="https://image.flaticon.com/icons/png/512/3612/3612197.png" width="200px" width="100px">
+					 	<p>Nett Price from SGD 150/night</p>
+				 	</div>
+					 <div class="headerbox">
+						<img src="https://image.flaticon.com/icons/png/512/1077/1077063.png" width="200px" width="100px">
+					 	<p>2 people</p>
+					 </div>
+				 </div>
+				 <div class="Details">
+					 <h4>Detailed Information:</h4>
+					 <!--<p>Are you looking for a small vaction spot or a place to stay? Grand Oceania Harbourfont is the choice for you!</p>-->
+					 <p>Suitable for couples who want to enjoy a little honeymoon stayaction or family who are looking for a short stay.</p>
+					 <ul>
+						 <li>Only a few minutes away from Harbourfont MRT</li>
+						 <li>Comfortable King Size Bed</li>
+						 <li>Wide wardrobe to store clothes</li>
+						 <li>Has a 22 inch TV that has many variety of shows and Netflix available for customers </li>
+					 </ul>
+					 <p>What are you waiting for? Many benefits would come when choosing Grand Oceania Harbourfont like enjoying free vouchers when choosing any of our rooms.<a class="btn" href="promotion.html"><b>Learn More</b></a></p>
+				</div>
+				 <div class="ViewDetails">
+					 <a href="BookingPremium.html"><input type="button" value="Book Now"></a>
+			 	</div>
+		 	</div>
+ </div>
+		<!--Back to Top Button-->
+		<div>
+			<a href="#" class="top-btn rounded-circle">^</a>
+		</div>
+	</main>
+	<hr>
+	<!--Responsive Footer -->
+		<section id="footer">
+			<div class="container">
+				<div class="row text-center text-xs-center text-sm-left text-md-left">
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<h5>About Grand Oceania HarbourFront</h5>
+						<ul class="list-unstyled quick-links">
+							<li><a href="Homepage.html"><i class="fas fa-home"></i>Home</a></li>
+							<li><a href="Room.html"><i class="fas fa-bed"></i>Room</a></li>
+							<li><a href="Facility.html"><i class="fas fa-store"></i>Facility</a></li>
+							<li><a href="Promotion.html"><i class="fas fa-bullhorn"></i>Promotion</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<h5>Visitors Information</h5>
+						<ul class="list-unstyled quick-links">
+							<li><a href="FAQs.html"><i class="fa fa-comments"></i>Frequently Asked Questions</a></li>
+							<li><a href="GettingHere.html"><i class="fas fa-map-marked-alt"></i>Getting Here</a></li>
+							<li><a href="AroundUs.html"><i class="fas fa-hotel"></i>Around Us</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<h5>Contact Us</h5>
+						<ul class="list-unstyled quick-links">
+							<li><a href="FAQs.html"><i class="fas fa-comment"></i>Enquiry</a></li>
+							<li><a href="tel:+65 6060 7071"><i class="fas fa-phone"></i>+65 6060 7071</a></li>
+							<li><a href="mailto:enquries@grandoceaniaharbourfront.com"><i class="fas fa-envelope"></i>enquiry@grandoceaniaharbourfront.com</a></li> <!-- emquiries@grandoceaniaharbourfront -->
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+						<ul class="list-unstyled list-inline social text-center">
+							<li class="list-inline-item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+						</ul>
+					</div>
+					<hr class="line">
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+						<p class="h6">© Copyright 2021 Grand Oceania HarbourFront.<a class="text-green ml-2" href="#" target="_blank">All right Reversed</a></p>
+					</div>
+					<hr class="line">
+				</div>
+			</div>
+		</section>
+		<!--Bootstrap JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<body>
+</html>
