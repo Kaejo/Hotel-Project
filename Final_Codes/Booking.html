@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width-device-width, initial-scale=1">
+	<!-- Responsive Navigation -->
+	<link rel="stylesheet" type="text/css" href="./CSS/Structure.css">
+	<!-- Responsive Footer -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<!--Bootstrap stylesheet-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<!--Tab Icon-->
+	<link rel="icon" type="text/css" href="images/logo.png">
+	<!--Own webpage CSS link-->
+	<link rel="stylesheet" type="text/css" href="./CSS/Booking.css">
+	<title>Grand Oceania Harbourfont</title>
+</head>
+<body>
+	<!--Responsive Header -->
+	<header class="sticky-top">
+		<div class="container" id="logo">
+			<a href="Homepage.html" class="navbar-brand navbar-expand-md"><img src="images/Hotel-logo.png" alt=""></a>
+		</div>
+
+		<nav class="navbar navbar-expand-md">
+			<div id="navi">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<i class="fas fa-bars"></i>
+					</button>
+				<div class="navbar-collapse collapse" id="navbar">
+					<ul class="navbar-nav nav-fill align-middle" >
+						<li class="nav-item"><a href="Homepage.html" class="nav-link">Home</a></li>
+						<li class="nav-item"><a href="Room.html" class="nav-link">Rooms</a></li>
+						<li class="nav-item"><a href="Facility.html" class="nav-link">Facilities</a></li>
+						<li class="nav-item"><a href="Promotion.html" class="nav-link">Promotion</a></li>
+						<li class="nav-item"><a href="AroundUs.html" class="nav-link">Around Us</a></li>
+						<li class="nav-item"><a href="FAQs.html" class="nav-link">FAQs</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!--Breadcrumbs-->
+	<hr>
+	<nav style="--bs-breadcrumb-divider: '>';">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="Homepage.html">Home</a></li>
+			<li class="breadcrumb-item"><a href="Room.html">Room</a></li>
+			<li class="breadcrumb-item"><a href="Booking.html">Booking</a></li>
+		</ol>
+		</nav>
+	<hr>
+	<main>
+		<!-- Input your Content -->
+		<!-- Input your Content -->
+			<div class="main">
+			      <div class="header">
+							<div class="Scale">
+								<label for="file"> Booking progress:</label>
+								<progress id="file" value="50" max="100"> 50% </progress>
+								<p>50%</p>
+							<!--<div class="FormSelection">
+								<img src="https://image.flaticon.com/icons/png/512/565/565860.png" alt="1." width="200px" width="100px">
+								<p><a href="Room.html">Select Room</a></p>
+							</div>
+							<div class="FormSelection">
+								<img src="https://image.flaticon.com/icons/png/512/565/565861.png" alt="2." width="200px" width="100px">
+								<p><a href="BookingRoom.html"><b> Room Booking</b></a></p>
+							</div>
+							<div class="FormSelection3">
+									<img src="https://image.flaticon.com/icons/png/512/565/565816.png" alt="3." width="200px" width="100px">
+									<p><a href="#">Guest & Credit Card Information</a></p>
+							</div>
+							<div class="FormSelection3">
+								<img src="https://image.flaticon.com/icons/png/512/565/565817.png" alt="3." width="200px" width="100px">
+								<p><a href="#">Confirmation</a></p>
+							</div>-->
+							</div>
+							<div class="Position">
+							<ol>
+								<a href="Room.html"><li class="Completed">select Room</li></a>
+								<li class="Onthegoing"><b>Room Booking</b></li>
+								<li>Guest & Credit Card Information</li>
+								<li>Confirmation</li>
+							</ol>
+						</div>
+      </div>
+      <div class="BlankSpacing">
+        <p></p>
+      </div>
+  </div>
+  <div class="Booking">
+      <div class="BookingInfo">
+        <h4>Booking Content:</h4>
+				<form action="/action_page.php">
+					<p>Deluxe Room:</p>
+					<!--<input type="radio" id="Deluxe" name="room_option" value="DELUXE">-->
+					<img for="Deluxe" src ="images/Room/DeluxeRoom1.jpg" alt="Deluxe Room"><br>
+					<!--<input type="radio" id="Premium" name="room_option" value="PREMIUM">
+					<img for="Premium" src ="images/PremiumRoom1.jpg" alt="Premium Room">-->
+					<!--<label for="DeluxeRoom"> <img src="images/DeluxeRoom1.jpg" alt="Deluxe Room"></label>-->
+        <!--<img src="images/DeluxeRoom1.jpg" alt="Deluxe Room">-->
+        <div class="BookingContent">
+					<div class="popup" onclick="myFunction()">
+						<p><img src="https://image.flaticon.com/icons/png/512/992/992651.png" alt="tick">View Details</p>
+						<div class="Popuppage">
+						<span class="popuptext" id="myPopup">
+							<h3>GRAND OCEANIA HABOURFRONT</h3>
+							<p>---------------------------------------------------</p>
+							<div class="Introduction">
+								<img src="images/Homepage/Hotel-Image.jpg" alt="Homepic">
+								<p>Located at Habourfront with a 9 minute walk to the MRT or Vivo City.
+									With shopping malls, there is also a big attractuon spot called Sentosa which allows you to
+									enjoy many different types of attractions, like S.E.A Aquarium, Universal Studios Singapore(USS),
+									Sentosa Beach, etc.</p>
+							</div>
+							<p>---------------------------------------------------</p>
+							<h5>Rate Terms & Conditions:</h5>
+							<ol>
+								<li> Please note that he credit card provided will be charged immediately
+									upon receipt of reservation.</li>
+								<li> Check-in time is from 2pm-8pm and check-out is by 12pm. Early check-in
+								or late check-out is subjected to room availability and additional fees may apply.</li>
+								<li> Guest shall make a deposit of $300 via Visa/Mastercard credit card upon
+									check-in.</li>
+								<li> Minimum age of stay is 18 years old.</li>
+								<li>Meal vouchers can be retrived at the courter with required documents that will be sent to you via email.</li>
+							</ol>
+						</span>
+						</div>
+					</div>
+					<script>
+					// When the user clicks on div, open the popup
+					function myFunction() {
+  				var popup = document.getElementById("myPopup");
+  					popup.classList.toggle("show");
+					}
+					</script>
+        </div>
+      </div>
+      <div class="BookingSelection">
+          <h4>Booking Selection:</h4>
+          	<div class="Selection">
+          	<!--<img src="https://image.flaticon.com/icons/png/512/860/860799.png" alt="tick">-->
+						<!--<input type="radio" id="dinner" name="option_free" value="DINNER">
+          	<label for="dinner"> 2 Days & 1 Night with free dining of dinner provided</label>
+          	</div>
+	          <div class="Selection">
+						<input type="radio" id="dinnernbar" name="option_free" value="DINNERNBAR">
+	          <!-<img src="https://image.flaticon.com/icons/png/512/860/860799.png" alt="tick">-->
+	          <!--<label for="dinnernbar"> 2 Days & 1 Night with free dining of dinner and free bar entrance</label>
+	          </div>
+	          <div class="Selection">
+						<input type="radio" id="breakfast" name="option_free" value="BREAKFAST">
+	          <!-<img src="https://image.flaticon.com/icons/png/512/860/860799.png" alt="tick">-->
+	          <!--<label for="breakfast"> 2 Days & 1 Night with free dining of breakfast provided</label>
+	          </div>
+					<h4>Calendar</h4>
+						<div class="Calendar">
+							<input type="date" id="Starting" name="StartDate" value="Start">
+							<label for="Starting"></label>-->
+							<label for="options">Choose a preferable stayaction: </label>
+							<select class="stay" name="">
+								<option value="starting">--Select--</option>
+								<option value="Dinner">2 Days & 1 Night with free dinner provided</option>
+								<option value="Breakfast">2 Days & 1 Night with free breakfast provided</option>
+							</select>
+						</div>
+						<div class="calendar-head">
+							<h4>Calendar:</h4>
+							<!-- book room button-->
+					    <!--<div class="book-box" onclick="showBookIn()">
+					        <p>Book Now</p>
+					    </div>-->
+
+					    <!-- book room container -->
+					    <div class="book-room-container">
+					        <!-- calender container -->
+					        <div class="calendar-container">
+					            <!-- calender header-->
+					            <div class="calendar-header">
+					                <!--<a id="container-exit" onclick="hideBookIn()">&#x2715;</a>-->
+					                <h6>Calendar</h6>
+					            </div>
+
+					            <!-- calendar check in check out container -->
+					            <div class="calendar-btn">
+					                <!-- check in -->
+					                <div class="check-in">
+					                    <span class="text">Check In</span>
+					                    <div class="day-week_1"></div>
+					                    <div class="day_1"></div>
+					                    <div class="month_1"></div>
+					                    <div class="year_1"></div>
+					                </div>
+
+					                <!-- check out -->
+					                <div class="check-out">
+					                    <span class="text">Check Out</span>
+					                    <div class="day-week_2"></div>
+					                    <div class="day_2"></div>
+					                    <div class="month_2"></div>
+					                    <div class="year_2"></div>
+					                </div>
+					            </div>
+
+					            <!-- calendar -->
+					            <div class="calendar">
+					                <a id="calendar-exit" onclick="showCalendar(0)">&#x2715;</a>
+
+					                <!-- month container -->
+					                <div class="month-container">
+					                    <!-- first month calendar -->
+					                    <table class="month-one">
+					                        <thead>
+					                            <tr class="caption">
+					                                <th><a class="prev">&#60;</a></th>
+					                                <th colspan="5" id="month-one"></th>
+					                                <th></th>
+					                            </tr>
+					                            <tr class="weekday">
+					                                <th>MO</th>
+					                                <th>TU</th>
+					                                <th>WE</th>
+					                                <th>TH</th>
+					                                <th>FR</th>
+					                                <th>SA</th>
+					                                <th>SU</th>
+					                            </tr>
+					                        </thead>
+					                    </table>
+
+					                    <!-- second month calendar -->
+					                    <table class="month-two">
+					                        <thead>
+					                            <tr class="caption">
+					                                <th></th>
+					                                <th colspan="5" id="month-two"></th>
+					                                <th><a class="next">&#62;</a></th>
+					                            </tr>
+					                            <tr class="weekday">
+					                                <th>MO</th>
+					                                <th>TU</th>
+					                                <th>WE</th>
+					                                <th>TH</th>
+					                                <th>FR</th>
+					                                <th>SA</th>
+					                                <th>SU</th>
+					                            </tr>
+					                        </thead>
+					                    </table>
+					                </div>
+					            </div>
+					        </div>
+
+
+
+					    </div>
+
+					    <!-- import js file  -->
+							<!-- Calender.js-->
+					    <script>
+							//function to display book room page
+				/*function showBookIn(){
+					var click = document.getElementsByClassName("book-room-container");
+					click[0].style.display = "block";
+				}
+
+				//function to close book room page
+				function hideBookIn(){
+					var click = document.getElementsByClassName("book-room-container");
+					click[0].style.display = "none";
+				}*/
+
+				// set global count
+				var check = "none";
+
+				//function to show/hide calendar
+				function showCalendar(num){
+					var click = document.getElementsByClassName("calendar");
+					if (num === 0){
+							click[0].style.display = "none";
+							check = "none";
+					}
+					else{
+							click[0].style.display = "block";
+							check = "block";
+					}
+				}
+
+				function displayCalendar(){
+					var calendar = document.getElementsByClassName("calendar");
+					if (check === "none"){
+							calendar[0].style.display = "block";
+							check = "block";
+					}
+					else{
+							calendar[0].style.display = "none";
+							check = "none";
+					}
+				}
+
+				// event listener function to listen for click event
+				document.addEventListener("mouseup", function(event) {
+					// get month container
+					var obj = document.querySelector(".month-container");
+
+					// const array of month-container children classnames
+					const check_name = ["days", "today", "prev", "nextDates", "next", "month-one", "month-two", "days today", "over", "over prevDates"];
+
+					// get clicked target classname
+					var e = event.target.className;
+
+					// get clicked target parent classname
+					var e_parent = event.target.parentNode.className;
+
+					// get clicked target id
+					var e_id = event.target.id;
+
+					// call select
+					select(e_id);
+
+					// call direction for arrow
+					direction(e);
+
+					// if statement to check if check in is clicked
+					if (e === "check-in" || e_parent === "check-in"){
+							displayCalendar();
+					}
+					// else if statement to check if check out is clicked
+					else if(e === "check-out" || e_parent === "check-out"){
+							displayCalendar();
+					}
+
+					// check if click event is outside month-container
+					else if(!obj.className.includes(e) && check === "block" && !check_name.includes(e)){
+							displayCalendar();
+					}
+				});
+
+				// initialise first clicked date id
+				var firstId = "";
+
+				// initialise second clicked date id
+				var secondId = "";
+
+				// function to select dates
+				function select(e){
+					if(e.includes("days") || e.includes("nextDates") || e.includes("prevDates")){
+							// if else to check if first clicked date and second clicked date is not none
+							if(firstId === ""){
+									firstId = e;
+							}
+							else if(secondId === ""){
+									secondId = e;
+							}
+							// get element from id and give it click class
+							var clicked = document.getElementById(e);
+							clicked.classList.add('click');
+					}
+					// if to check if firstid and secid not none
+					if(firstId !== "" && secondId !== ""){
+							// get first num and second num from element textcontent
+							var firstNum = parseInt(document.getElementById(firstId).textContent);
+							var secNum = parseInt(document.getElementById(secondId).textContent);
+
+							// for loop to loop through number to show selected
+							for(i = firstNum + 1; i < secNum; i++){
+									var temp_id = "days_" + i.toString();
+									document.getElementById(temp_id).classList.add('selected');
+							}
+
+							// set check in check out day
+							document.querySelector(".day_1").innerHTML = firstNum;
+							document.querySelector(".day_2").innerHTML = secNum;
+					}
+
+				}
+							</script>
+
+							<!-- Style.js-->
+					    <script>
+							// create base date obj
+				var date = new Date();
+
+				// create date for calendar and set date to 1
+				var calendarDate = new Date();
+				calendarDate.setDate(1);
+
+				// get today day index
+				var todayIndex = new Date().getDay();
+
+				// var for total num of row and rol
+				var row = 6;
+				var col = 7;
+
+				// get month index and year
+				var monthIndex = date.getMonth();
+				var year = date.getFullYear();
+
+				// get todays date
+				var today = date.getDate();
+
+				// get last day
+				var lastDay = new Date(year, monthIndex, 0).getDate();
+
+				// months array
+				var months = ["January", "February", "March", "April", "May", "June", "July",
+					"August", "September", "October", "November", "December"];
+
+				// short form months array
+				var shortMonths = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+				// weekdays array
+				var weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+				// function to delete tbody
+				function deleteTbody() {
+
+					// get tables
+					var firstTable = document.querySelector(".month-one");
+					var secondTable = document.querySelector(".month-two");
+
+					// get the tbody tag from table
+					var firstBody = firstTable.getElementsByTagName('tbody')[0];
+					var secondBody = secondTable.getElementsByTagName('tbody')[0];
+
+					// delete table body
+					firstTable.removeChild(firstBody);
+					secondTable.removeChild(secondBody);
+				}
+
+				//function to generate second calendar
+				function secondCalendar() {
+
+					// get table from html
+					var table_2 = document.querySelector(".month-two");
+
+					// if statement to check if month index will be 12
+					if ((calendarDate.getMonth() + 1) === 12) {
+							// create new obj for next year
+							var newDate = new Date((calendarDate.getFullYear() + 1), 0, 1);
+							var newYear = newDate.getFullYear();
+
+							// get current month index
+							var currentMonth_2 = newDate.getMonth();
+
+							// get location to put month
+							var monthName_2 = document.querySelector("#month-two");
+
+							// get first day of month index
+							// also used for number of prev months dates to add into calendar
+							var firstDayIndex_2 = newDate.getDay();
+
+							// get last day of prev month
+							var lastDayOfPrev_2 = new Date(year, newYear, 0).getDate();
+
+							// get last day of current month
+							// also number of days in the current month
+							var lastDayOfCurrent_2 = new Date(year, newYear + 1, 0).getDate();
+
+							// call create calendar function to create calendar
+							createCalendar(lastDayOfCurrent_2, firstDayIndex_2, table_2, lastDayOfPrev_2, currentMonth_2, monthName_2, newDate)
+					}
+					else {
+
+							// get current month index
+							var currentMonth_2 = calendarDate.getMonth() + 1;
+
+							// get location to put month
+							var monthName_2 = document.querySelector("#month-two");
+
+							// get first day of month index
+							// also used for number of prev months dates to add into calendar
+							var firstDayIndex_2 = calendarDate.getDay();
+
+							// get last day of prev month
+							var lastDayOfPrev_2 = new Date(year, currentMonth_2, 0).getDate();
+
+							// get last day of current month
+							// also number of days in the current month
+							var lastDayOfCurrent_2 = new Date(year, currentMonth_2 + 1, 0).getDate();
+
+							// call create calendar function to create calendar
+							createCalendar(lastDayOfCurrent_2, firstDayIndex_2, table_2, lastDayOfPrev_2, currentMonth_2, monthName_2, calendarDate)
+					}
+				}
+
+				// function to generate first calendar
+				function firstCalendar() {
+
+					// get table from html
+					var table_1 = document.querySelector(".month-one");
+
+					// get month for first calendar
+					var currentMonth = calendarDate.getMonth();
+
+					// get location to put month
+					var monthName = document.querySelector("#month-one");
+					// get first day of month index
+					// also used for number of prev months date to add into calendar
+					var firstDayIndex = calendarDate.getDay();
+
+					// get last day of prev month
+					var lastDayOfPrev = new Date(year, currentMonth, 0).getDate();
+
+					// get last day of current month
+					// also number of days in the current month
+					var lastDayOfCurrent = new Date(year, currentMonth + 1, 0).getDate();
+
+					// call create Calendar function to create calendar
+					createCalendar(lastDayOfCurrent, firstDayIndex, table_1, lastDayOfPrev, currentMonth, monthName, calendarDate);
+				}
+
+
+				// function create prev month days
+				function createPrevDate(tr, firstDay, lastDay, month) {
+					if (firstDay === 0) {
+							var first = 6;
+					}
+					else {
+							var first = firstDay - 1;
+					}
+					//for loop to loop through num of prev dates
+					for (i = first; i > 0; i--) {
+							// create th element and give it class and id
+							var th = document.createElement('th');
+							if(month === monthIndex){
+									th.setAttribute("class", "over");
+							}
+							else{
+									th.setAttribute("class", "prevDates");
+							}
+
+							var prevMonthDate = lastDay - i + 1;
+							var text = document.createTextNode(prevMonthDate.toString());
+							th.appendChild(text);
+							tr.appendChild(th);
+					}
+				}
+
+
+
+				// function to dynamically create calendar
+				var createCalendar = (lastDayCurrent, firstDay, table, lastDayPrev, month, monthName, dateObj) => {
+					var counter = 1;
+					var nextDates = 1;
+
+					// set month on calendar
+					monthName.innerHTML = months[month] + " " + dateObj.getFullYear();
+
+					// create tbody and append to table
+					var tbody = document.createElement('tbody');
+					table.appendChild(tbody);
+
+					// nested for loop to dynamically generate calendar
+					// outer for loop to loop through num of row
+					for (i = 0; i < row; i++) {
+							tr = document.createElement('tr');
+							// inner for loop to loop through num of col
+							for (j = 0; j < col; j++) {
+									// create th element
+									var th = document.createElement('th');
+
+									if (i === 0 && j === 0 && firstDay !== 1) {
+											// call createPrevDate
+											createPrevDate(tr, firstDay, lastDayPrev, month);
+											if (firstDay === 0) {
+													var first = 6;
+											}
+											else {
+													var first = firstDay - 1;
+											}
+											// set to num of prev month day to input
+											j = first - 1;
+									}
+									else if (counter <= lastDayCurrent) {
+											// if statement to find past date
+											if (counter < today && month === date.getMonth()) {
+													th.setAttribute("class", "over");
+											}
+											// else if to find today
+											else if (counter == today && month === date.getMonth()) {
+													th.setAttribute("class", "days today");
+													th.setAttribute("id", "days_" + counter);
+											}
+											else {
+													th.setAttribute("class", "days");
+													th.setAttribute("id", "days_" + counter);
+											}
+
+											// create text element
+											var text = document.createTextNode(counter.toString());
+
+											// append text to th and append th to tr
+											th.appendChild(text);
+											tr.appendChild(th);
+											counter++;
+									}
+									else {
+											//set th attribute
+											th.setAttribute("class", "nextDates");
+											th.setAttribute("id", "next_" + nextDates);
+
+											//create text element
+											var text = document.createTextNode(nextDates.toString());
+
+											//append text to th and append th to tr
+											th.appendChild(text);
+											tr.appendChild(th);
+											nextDates++;
+									}
+							}
+							// append tr to tbody
+							tbody.appendChild(tr);
+					}
+					// append tbody to table
+					table.appendChild(tbody);
+				}
+
+
+				// function to determine direction
+				function direction(dir) {
+
+					// if statement to check for direction
+					if (dir === "next") {
+							calendarDate.setMonth(calendarDate.getMonth() + 1);
+							deleteTbody();
+							firstCalendar();
+							secondCalendar();
+					}
+					else if (dir === "prev") {
+							calendarDate.setMonth(calendarDate.getMonth() - 1);
+							deleteTbody();
+							firstCalendar();
+							secondCalendar();
+					}
+				}
+
+				// function to set text
+				function text(){
+					// call check in day-week text
+					var weekday_1 = document.querySelector(".day-week_1");
+					weekday_1.innerHTML = weekdays[todayIndex];
+
+					// call check out day-week text
+					var weekday_2 = document.querySelector(".day-week_2");
+
+					// if else to check if day index +1 is 7 then set it to 0
+					if((todayIndex + 1) === 7){
+							weekday_2.innerHTML = weekdays[0];
+					}
+					else{
+							weekday_2.innerHTML = weekdays[todayIndex + 1];
+					}
+
+					// call check in day
+					var day_1 = document.querySelector(".day_1");
+					day_1.innerHTML = today;
+
+					// call check out day
+					var day_2 = document.querySelector(".day_2");
+
+					// if else to check if today date + 1 is not over last day of the month
+					if((today + 1) > lastDay){
+							day_2.innerHTML = lastDay;
+					}
+					else{
+							day_2.innerHTML = today + 1;
+					}
+
+					// call check in month
+					var month_1 = document.querySelector(".month_1");
+					month_1.innerHTML = shortMonths[monthIndex];
+
+					// call check out month
+					var month_2 = document.querySelector(".month_2");
+					month_2.innerHTML = shortMonths[monthIndex];
+
+					// call check in year
+					var year_1 = document.querySelector(".year_1");
+					year_1.innerHTML = year;
+
+					// call check out year
+					var year_2 = document.querySelector(".year_2");
+					year_2.innerHTML = year;
+
+				}
+
+				// call text
+				text();
+
+				// call function to create both calendar
+				firstCalendar("none");
+				secondCalendar("none");
+							</script>
+						</div>
+      </div>
+    </div>
+
+    <div class="BlankSpacing">
+      <p></p>
+    </div>
+
+  <div class="MovingOn">
+    <a href="payment.html"><input type="button" value="Continue"></a>
+  </div>
+</form>
+		<!--Back to Top Button-->
+		<div>
+			<a href="#" class="top-btn rounded-circle">^</a>
+		</div>
+	</main>
+	<hr>
+	<!--Responsive Footer -->
+		<section id="footer">
+			<div class="container">
+				<div class="row text-center text-xs-center text-sm-left text-md-left">
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<h5>About Grand Oceania HarbourFront</h5>
+						<ul class="list-unstyled quick-links">
+							<li><a href="Homepage.html"><i class="fas fa-home"></i>Home</a></li>
+							<li><a href="Room.html"><i class="fas fa-bed"></i>Room</a></li>
+							<li><a href="Facility.html"><i class="fas fa-store"></i>Facility</a></li>
+							<li><a href="Promotion.html"><i class="fas fa-bullhorn"></i>Promotion</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<h5>Visitors Information</h5>
+						<ul class="list-unstyled quick-links">
+							<li><a href="FAQs.html"><i class="fa fa-comments"></i>Frequently Asked Questions</a></li>
+							<li><a href="GettingHere.html"><i class="fas fa-map-marked-alt"></i>Getting Here</a></li>
+							<li><a href="AroundUs.html"><i class="fas fa-hotel"></i>Around Us</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<h5>Contact Us</h5>
+						<ul class="list-unstyled quick-links">
+							<li><a href="FAQs.html"><i class="fas fa-comment"></i>Enquiry</a></li>
+							<li><a href="tel:+65 6060 7071"><i class="fas fa-phone"></i>+65 6060 7071</a></li>
+							<li><a href="mailto:enquries@grandoceaniaharbourfront.com"><i class="fas fa-envelope"></i>enquiry@grandoceaniaharbourfront.com</a></li> <!-- emquiries@grandoceaniaharbourfront -->
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+						<ul class="list-unstyled list-inline social text-center">
+							<li class="list-inline-item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+						</ul>
+					</div>
+					<hr class="line">
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+						<p class="h6">© Copyright 2021 Grand Oceania HarbourFront.<a class="text-green ml-2" href="#" target="_blank">All right Reversed</a></p>
+					</div>
+					<hr class="line">
+				</div>
+			</div>
+		</section>
+		<!--Bootstrap JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<body>
+</html>

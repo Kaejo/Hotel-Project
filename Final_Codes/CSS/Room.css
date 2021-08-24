@@ -1,0 +1,396 @@
+
+/*Main Content*/
+
+.dropbtn {
+  background-color: grey;
+  color: white;
+  padding:20px;
+  width: 200%;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+/*.dropdown:hover .dropdown-content {display: block;}*/
+
+.dropdown:hover .dropbtn {background-color: #bcb8b8;}
+
+.show {
+  display: block
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.container1 {
+  position: relative;
+  width: 50%;
+}
+
+.container2 {
+  position: relative;
+  width: 50%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides1 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: sticky;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.row1 {
+  display: flex;
+  width: 50%;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+  position: static;
+}
+
+.row2 {
+  display: flex;
+  width: 50%;
+}
+
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.column1 {
+  float: left;
+  width: 33.33%;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.demo1 {
+  opacity: 0.6;
+}
+
+.active1,
+.demo1:hover {
+  opacity: 1;
+}
+
+.KeyFeaturesBoxes{
+  border:2px solid black;
+  background-color: white;
+}
+
+.KeyFeaturesHeader {
+  color: black;
+  padding: 0px 20px;
+
+}
+
+.KeyFeatures{
+  /*padding:20px;*/
+  display: inline-flex;
+  width: 100%;
+}
+
+.boxes {
+  /*display:inline-flex;*/
+  flex-wrap: wrap;
+  text-align: center;
+  width: 40%;
+}
+
+.KeyFeatures ul{
+  color: black;
+  list-style: none;
+  list-style-type: none;
+  display: inline-block;
+  /*padding: 0;
+  margin: 0;*/
+}
+
+.SecondHalf{
+  display: inline-flex;
+  width: 100%;
+}
+.SecondHalf .boxes{
+  flex-wrap: wrap;
+  text-align: center;
+  width: 40%;
+}
+
+.SecondHalf ul{
+  list-style: none;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.SecondHalf ul li {
+  padding: 5px 10px;
+}
+
+.KeyFeatures ul li{
+  padding: 5px 10px;
+}
+.RoomDescription {
+  float: left;
+  display: inline-flex;
+  /*background: #7ec0ee;*/
+  background: black;
+  color: white;
+}
+
+.RoomDescription2 {
+  float: left;
+  display: inline-flex;
+  /*background: #7ec0ee;*/
+  background: black;
+  color: white;
+}
+
+/*div.gallery {
+  display: flex;
+  margin: 5px;
+  border: 1px solid #fff;
+  /*float: left;
+  width:100%;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 50%;
+  height: auto;
+} */
+
+div.desc {
+  float: right;
+  /*background: rgba(165,42, 42);*/
+  /*background: #cdaa7d;*/
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  /*padding: 10px;*/
+  text-align: center;
+  position: static;
+}
+
+div.desc h3{
+  /*color: DarkBlue;*/
+  color: white;
+}
+
+div.desc p {
+  /*color: Black;*/
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+div.desc a {
+  text-decoration: none;
+  color: blue;
+}
+
+div.desc img{
+  width: 7%;
+  background-color: white;
+}
+
+.headerbox {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  border:2px solid white;
+  background: white;
+  color: black;
+}
+
+.headerbox p{
+  margin-left: 1%;
+  font-size: 17px;
+}
+
+.Details{
+  background-color: white;
+  /*border:2px solid black;*/
+  /*padding:20px;*/
+  color: black;
+  padding: 5px;
+  text-align: left;
+  width: 80%;
+  display: inline-table;
+}
+
+.Details ul{
+  list-style-type:circle ;
+  list-style-position: inside;
+
+}
+
+.Details ul li{
+  padding: 7px 0;
+  margin-left: 2%;
+}
+
+div.ViewDetails{
+  margin-top: 1%;
+  margin-bottom: auto;
+  background-color: black;
+  /*border: 2px solid black;*/
+  text-align: justify;
+  padding: 5px;
+  text-align: center;
+}
+
+div.ViewDetails p {
+  color: Black;
+  vertical-align: middle;
+  line-height: 10px;
+}
+
+.ViewDetails input{
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  margin-bottom: 3%;
+}
+
+.ViewDetails a{
+  text-decoration: none;
+  color: Black;
+}
+
+button{
+  position: static;
+}
+
+@media(max-width: 660px) {
+  .KeyFeatures{
+    display: contents;
+    font-size: 9px;
+  }
+
+  .KeyFeatures img {
+    width: 30%;
+  }
+
+  .boxes{
+    width: 30%;
+  }
+
+  .SecondHalf {
+    display: flex;
+  }
+
+  .SecondHalf .boxes {
+    width: 30%;
+  }
+
+  .RoomDescription{
+    display: contents;
+  }
+
+  .container1{
+    width: 100%;
+  }
+
+  div .desc {
+    width: 100%;
+    float: left;
+  }
+
+  .RoomDescription2{
+    display: contents;
+  }
+
+  .container2{
+    width: 100%;
+  }
+}

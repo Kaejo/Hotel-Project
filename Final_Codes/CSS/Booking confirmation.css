@@ -1,0 +1,97 @@
+/* Responsive Navigation Menu */
+* {box-sizing: border-box;}
+
+main h2 {
+  text-align: center;
+  margin-top: 39px;
+}
+
+main p {
+  text-align: center;
+}
+
+main img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+}
+
+.button {
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+.Scale {
+  display: flex;
+  margin-top: 2%;
+  width: 100%
+}
+
+.Scale label {
+  margin-left: 15%;
+  margin-top: 0.5%;
+}
+
+.Scale progress {
+  margin-left: 1%;
+  margin-top: 1%;
+  width: 50%;
+
+}
+
+.Scale p {
+  margin-left: 1%;
+  margin-top: 0.5%
+}
+
+.Position ol {
+  width: 100%;
+  display: inline-flex;
+  margin-top: 2%;
+  list-style-type: upper-roman ;
+}
+
+.Position ol a{
+  width: 25%;
+}
+
+.Completed {
+color: #2bdc42
+}
+
+.Onthegoing {
+  text-decoration: underline;
+  color: #ebb3b2
+
+}
+
+.Position li {
+  margin-right: 5%;
+  width: 25%;
+}
+
+.Position a {
+  color: white;
+  text-decoration: none;
+  width: 10%;
+}

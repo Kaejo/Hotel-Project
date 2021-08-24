@@ -1,0 +1,41 @@
+/* Responsive Navigation Menu */
+* {box-sizing: border-box;}
+
+main h2 {
+  text-align: center;
+  margin-top: 39px;
+}
+
+main p {
+  text-align: center;
+}
+
+main img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+}
+
+.button {
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+

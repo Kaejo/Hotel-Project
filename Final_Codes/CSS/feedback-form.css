@@ -1,0 +1,488 @@
+/* Responsive Navigation Menu */
+* {
+  box-sizing: border-box;
+  font-family: Segoe UI, times new roman;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: rgb(0, 0, 0) !important;
+}
+/* Top of webpage (navigation) */
+header{
+  background-color: black;
+  position: sticky; /* stick to the top of the page */
+  top: 0%;
+  z-index: 1;  /* will be displayed in front of other elements*/
+}
+/* Content word color */
+main{
+  color: white;
+}
+
+/* Logo */
+#logo{
+  width: 90%;
+  height: 80px;
+}
+
+/* Logo positions */
+#logo a img{
+  display: block;
+  margin: auto;
+  padding: 12px;
+}
+
+/* Navigation Bar */
+#navi{
+  width: 100%;
+}
+
+#navi ul{
+  width: 100%;
+}
+
+#navi ul li:hover {
+  background-color: #d3d3d3a1;
+  border-radius: 20px;
+}
+
+#navi ul li a{
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+button .navbar-toggler-icon{
+  background-color: white;
+}
+
+/* Horizontal Line */
+hr{
+  width: 100% !important;
+  border-top: 2px solid white !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+}
+
+/* BreadCrumbs Navigation */
+.breadcrumb{
+  padding: 10px 16px !important;
+  margin: 0 !important;
+  position: static;
+}
+
+.breadcrumb-item{
+  display: inline;
+  font-size: 14px;
+}
+
+/*when add new list, it will auto add and show in the webpage*/
+.breadcrumb li+li:before{
+  color: white !important;
+  content: ">";
+}
+
+.breadcrumb-item a{
+  color: rgba(255, 255, 255, 0.925);
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover{
+  color: white;
+}
+
+main button {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: forestgreen;
+  font-size: 16px;
+  margin-left: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+main button:hover {
+  background-color: green;
+}
+
+main .btns {
+  border: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 18px;
+  color: white;
+}
+
+main .btns a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Back to Top button*/
+.top-btn {
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin: 1%;
+  text-align: center;
+  border: 1px solid grey;
+  color: white;
+  text-decoration: none;
+}
+
+.top-btn:hover{
+  background-color: #cdaa7d;
+  color: white;
+  border: none;
+}
+
+/* Top Section of feedback form */
+main h2 {
+  font-weight: normal;
+  font-weight: cursive;
+  font-style: oblique;
+  margin-left: 18px;
+  margin-top: 25px;
+
+}
+
+main p {
+  margin-left: 18px;
+  margin-top: 28px;
+}
+
+.container1 h2 {
+  margin-top: 3px;
+  font-weight: bold;
+  font-style: normal;
+  margin-left: 1px;
+  line-height: 3em;
+}
+
+span {
+  color: red;
+}
+
+/* FORM */
+table {
+  width: 100%;
+}
+
+h4 {
+  padding: 15px 0 5px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.question-answer label {
+  display: inline-block;
+  padding: 0 20px 15px 0;
+}
+
+.question-answer input {
+  width: auto;
+}
+
+th, td {
+  margin-top: 1px;
+  width: 17%;
+  padding: 15px 0;
+  text-align: center;
+  vertical-align: unset;
+  line-height: 18px;
+  font-weight: 400;
+  word-break: break-all;
+  border-bottom: 1px solid white;
+  color: #095484;
+}
+
+.first-col {
+  width: 26%;
+  text-align: left;
+  color: white;
+}
+
+@media (min-width: 568px) {
+th, td {
+  word-break: keep-all;
+}
+}
+/* END OF FORM */
+
+/* Continuation of feedback form */
+input[type=text], select, textarea {
+  width: 50%; /* Adjust the length of the textbox */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container1 {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 18%; /* Adjust the textbox closer to the labels */
+  margin-top: 6px;
+}
+
+/* Comments Section */
+.column1 {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row>* {
+    flex-shrink: 0;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .33);
+}
+
+/* Comments Section */
+.column2 {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*responsive footer*/
+@media(max-width: 1120px) {
+
+  .center {
+    font-size: 45px;
+  }
+
+  .columns {
+    float: left;
+    width: 100%;
+  }
+
+}
+
+@media(max-width: 1050px) {
+
+  .center {
+    font-size: 40px;
+  }
+
+  .columns {
+    float: left;
+    width: 100%;
+  }
+
+}
+
+@media(max-width: 620px) {
+
+  .center {
+    font-size: 30px; /* Sizing of the text */
+  }
+
+  .columns {
+    float: left;
+    width: 100%;
+  }
+
+  main h2 {
+    margin-top: 50px;
+  }
+
+}
+
+/*Responsive for contents */
+@media (max-width:568px) {
+  .column2 textarea {
+    width: 100%;
+  }
+
+  .col-75 {
+    width: 100%;
+  }
+}
+
+/* Responsive for iphones, ipads versions */
+/*iphone 6/7/8 responsive (Vertical view) */
+@media (max-width: 414px) {
+  .row1 .col-75 {
+    width: 100%;
+  }
+}
+
+/*iphone 6/7/8 responsive (Horizontal view) */
+@media (max-width: 736px) {
+  .row1 .col-75 {
+    width: 100%;
+  }
+
+  .column2 textarea {
+    width: 100%;
+  }
+}
+
+/*ipad responsive (vertical view) */
+@media (max-width: 768px) {
+  .row1 .col-75 {
+    width: 100%;
+  }
+
+  .column2 textarea {
+    width: 100%;
+  }
+}
+
+/*ipad responsive (horizontal view) */
+@media (max-width: 1024px) {
+  .row1 .col-75 {
+    width: 100%;
+  }
+
+  .column2 textarea {
+    width: 100%;
+  }
+}
+
+/* Responsive Bootstrap Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+padding: 20px 0;
+}
+
+section .section-title {
+text-align: center;
+color: #007b5e;
+margin-bottom: 50px;
+text-transform: uppercase;
+}
+
+#footer {
+background: black !important;
+color: white !important;
+margin-top: 50px;
+}
+
+#footer h5{
+padding-left: 10px;
+padding-bottom: 6px;
+margin-bottom: 20px;
+color:#ffffff;
+}
+#footer a {
+color: #ffffff;
+text-decoration: none !important;
+background-color: transparent;
+-webkit-text-decoration-skip: objects;
+}
+
+#footer ul.social li{
+padding: 3px 0;
+}
+
+#footer ul.social li a i {
+margin-right: 5px;
+font-size:25px;
+-webkit-transition: .5s all ease;
+-moz-transition: .5s all ease;
+transition: .5s all ease;
+}
+
+#footer ul.social li:hover a i {
+font-size:30px;
+margin-top:-10px;
+}
+
+#footer ul.social li a,
+#footer ul.quick-links li a{
+color:#ffffff;
+}
+
+#footer ul.social li a:hover{
+color:#eeeeee;
+}
+
+#footer ul.quick-links li{
+padding: 3px 0;
+-webkit-transition: .5s all ease;
+-moz-transition: .5s all ease;
+transition: .5s all ease;
+}
+
+#footer ul.quick-links li:hover{
+padding: 3px 0;
+margin-left:5px;
+font-weight:700;
+}
+
+#footer ul.quick-links li a i{
+margin-right: 5px;
+}
+
+#footer ul.quick-links li:hover a i {
+font-weight: 700;
+}
+
+/* Responsive Footer - Gotten viewport sizes from developer console */
+/* Tablet size */
+@media (max-width: 768px) {
+.col-md-4{
+	width: 100% !important;
+}
+}
+
+/* Mobile L size */
+@media (max-width: 425px) {
+#logo a img{
+	width: 100%;
+}
+}

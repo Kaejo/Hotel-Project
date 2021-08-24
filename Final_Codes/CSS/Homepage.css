@@ -1,0 +1,771 @@
+/* Responsive Navigation Menu */
+* {
+  box-sizing: border-box;
+  font-family: Segoe UI, times new roman;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: rgb(0, 0, 0) !important;
+}
+/* Top of webpage (navigation) */
+header{
+  background-color: black;
+  position: sticky; /* stick to the top of the page */
+  top: 0%;
+  z-index: 1;  /* will be displayed in front of other elements*/
+}
+/* Content word color */
+main{
+  color: white;
+}
+
+/* Logo */
+#logo{
+  width: 90%;
+  height: 80px;
+}
+
+/* Logo positions */
+#logo a img{
+  display: block;
+  margin: auto;
+  padding: 12px;
+}
+
+/* Navigation Bar */
+#navi{
+  width: 100%;
+}
+
+#navi ul{
+  width: 100%;
+}
+
+#navi ul li:hover {
+  background-color: #d3d3d3a1;
+  border-radius: 20px;
+}
+
+#navi ul li a{
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+button .navbar-toggler-icon{
+  background-color: white;
+}
+
+/* Horizontal Line */
+hr{
+  width: 100% !important;
+  border-top: 2px solid white !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+}
+
+/* BreadCrumbs Navigation */
+.breadcrumb{
+  padding: 10px 16px !important;
+  margin: 0 !important;
+  position: static;
+}
+
+.breadcrumb-item{
+  display: inline;
+  font-size: 14px;
+}
+
+/*when add new list, it will auto add and show in the webpage*/
+.breadcrumb li+li:before{
+  color: white !important;
+  content: ">";
+}
+
+.breadcrumb-item a{
+  color: rgba(255, 255, 255, 0.925);
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover{
+  color: white;
+}
+
+/*Back to Top button*/
+.top-btn {
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin: 1%;
+  text-align: center;
+  border: 1px solid grey;
+  color: white;
+  text-decoration: none;
+}
+
+.top-btn:hover{
+  background-color: #cdaa7d;
+  color: white;
+  border: none;
+}
+
+/* Text over Image */
+.containers img {
+  width: 99%;
+  margin-left: 1px;
+  height: 450px;
+}
+
+.containers {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.center {
+  position: absolute;
+  top: 53%; /* Adjust the text over the hotel image */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 55px;
+}
+
+/* Lastest Promotions and Offers */
+/* .promotions {
+  float: left;
+  width: 50%;
+  padding: 5px;
+} */
+
+/* Clearfix (clear floats) */
+/* .rows::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+/* .rows .promotions img:hover {
+  transform: scale(1.05);  /*how much the img hovers (size)
+} */
+
+/* Facilities */
+.columns {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.rows::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.rows .columns img:hover {
+  transform: scale(1.1);  /*how much the img hovers (size) */
+}
+
+/* Buttons Link to another webpage */
+.button1 {
+  background-color: lightgray;
+  border: none;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  /* margin-left: 45px; /* Alignment of the buttons */
+}
+
+.button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.column1 .button a {
+  color: black; /*change text color */
+}
+
+main p{
+  color: white;
+  cursor: auto;
+}
+
+main h2 {
+  cursor: auto;
+}
+
+button .Button {
+  background-color: lightgray;
+  border: none;
+  color: black;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  margin-left: 45px; /* Alignment of the buttons */
+}
+
+/* Reserve your perfect suite */
+img {
+  vertical-align: middle;
+}
+
+.mySlides img {
+  height: 600px; /* Adjust the height of the image slideshow */
+}
+
+.column1 img {
+  scroll-behavior: unset;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container1 {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Container for image text */
+.caption-container1 {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: orange;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Three columns side by side */
+.column1 {
+  float: left;
+  width: 18%;
+  padding: 5px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* Buttons Link to another webpage */
+.button {
+  background-color: lightgray;
+  border: none;
+  color: black;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  margin-left: 40px; /* Alignment of the buttons */
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*Responsive*/
+@media(max-width: 1120px) {
+
+  .center {
+    font-size: 45px;
+  }
+
+  .promotions {
+    float: left;
+    width: 100%;
+  }
+
+  .facilities {
+    float: left;
+    width: 100%;
+  }
+
+  .button {
+    margin-left: 35px; /* Alignment of the buttons */
+    padding: 10px;
+  }
+
+  .columnss img:hover {
+    transform: scale(1.03);
+  }
+
+}
+
+
+@media(max-width: 1050px) {
+  .center {
+    font-size: 40px;
+  }
+
+  .columns {
+    float: left;
+    width: 100%;
+  }
+
+  .button {
+    margin-left: 30px; /* Alignment of the buttons */
+    padding: 5px;
+  }
+
+}
+
+
+@media(max-width: 620px) {
+
+  .center {
+    font-size: 30px; /* Sizing of the text */
+  }
+
+  .columns {
+    float: left;
+    width: 100%;
+  }
+
+  .button {
+    margin-left: 5px; /* Alignment of the buttons */
+    padding: 8px;
+    font-size: 10px;
+  }
+
+}
+
+
+/*Responsive*/
+@media(max-width: 1120px) {
+
+  .center {
+    font-size: 45px;
+  }
+
+  .promotions {
+    float: left;
+    width: 100%;
+  }
+
+  .facilities {
+    float: left;
+    width: 100%;
+  }
+
+  .button {
+    margin-left: 35px; /* Alignment of the buttons */
+    padding: 10px;
+  }
+
+  .columns img:hover {
+    transform: scale(1.03);
+  }
+
+}
+
+@media(max-width: 1050px) {
+
+  .button {
+    margin-left: 30px; /* Alignment of the buttons */
+    padding: 5px;
+  }
+
+}
+
+/* Content Responsive */
+@media (max-width: 767px) {
+  .containers img {
+    height: 600px;
+  }
+
+  .mySlides img {
+    height: 300px;
+  }
+
+  .button {
+    margin-left: 30px;
+    padding: 7px;
+  }
+}
+
+@media(max-width: 620px) {
+
+  .button {
+    margin-left: 5px; /* Alignment of the buttons */
+    padding: 8px;
+    font-size: 10px;
+  }
+
+}
+
+@media (max-width: 540px) {
+  .button {
+    padding: 8px;
+    width: 70px;
+    height: 30px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .button {
+    padding: 8px;
+    width: 70px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .center {
+      position: absolute;
+      top: 51%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+    }
+}
+
+
+/* Vertical View for iPhone 6/7/8 Plus Responsive */
+ @media (max-width: 414px) {
+  .container img {
+    width: 100%;
+  }
+
+  .containers img {
+    height: 290px;
+  }
+
+  .center {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+  }
+
+  .mySlides img {
+    height: 300px;
+  }
+
+  .column1 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .button {
+    margin-left: 60px;
+  }
+}
+
+/* Horizontal View for iPhone 6/7/8 Plus Responsive */
+
+@media (max-width: 736px) {
+  .mySlides img {
+    height: 450px;
+  }
+
+  .column1 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .button {
+    margin-left: 120px;
+  }
+}
+
+/* Vertical View for iPhone X Responsive */
+
+@media (max-width: 375px) {
+
+  .column1 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .button {
+    margin-left: 60px;
+  }
+}
+
+/* Horizontal View for iPhone X Responsive */
+
+@media (max-width: 812px) {
+
+  .column1 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .button {
+    margin-left: 130px;
+  }
+}
+
+/* Vertical View for iPad Responsive */
+
+@media (max-width: 812px) {
+
+  .center {
+      position: absolute;
+      top: 51%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 50px;
+    }
+
+  .mySlides img {
+    height: 470px;
+  }
+
+  .column1 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .button {
+    margin-left: 130px;
+  }
+}
+
+/* Horizontal View for iPad Responsive */
+@media (max-width: 1024px) {
+
+  .containers img {
+    height: 570px;
+  }
+
+  .center {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+  }
+
+  .mySlides img {
+    height: 550px;
+  }
+
+  .column1 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .button {
+    margin-left: 38px;
+  }
+}
+
+/* Horizontal View for iPad Pro Responsive */
+/* @media (max-width: 1366px) {
+
+  .containers img {
+    height: 800px;
+  }
+
+  .center {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 85px;
+  }
+
+  .mySlides img {
+    height: 750px;
+  }
+
+  .column1 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+
+  .button {
+    margin-left: 250px;
+  }
+} */
+
+@media (max-width:610px) {
+  .mySlides img {
+    height: 350px;
+  }
+
+  .button {
+    margin-left: 100px;
+  }
+}
+
+/* Responsive Bootstrap Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+padding: 20px 0;
+}
+
+section .section-title {
+text-align: center;
+color: #007b5e;
+margin-bottom: 50px;
+text-transform: uppercase;
+}
+
+#footer {
+background: black !important;
+color: white !important;
+margin-top: 50px;
+}
+
+#footer h5{
+padding-left: 10px;
+padding-bottom: 6px;
+margin-bottom: 20px;
+color:#ffffff;
+}
+#footer a {
+color: #ffffff;
+text-decoration: none !important;
+background-color: transparent;
+-webkit-text-decoration-skip: objects;
+}
+
+#footer ul.social li{
+padding: 3px 0;
+}
+
+#footer ul.social li a i {
+margin-right: 5px;
+font-size:25px;
+-webkit-transition: .5s all ease;
+-moz-transition: .5s all ease;
+transition: .5s all ease;
+}
+
+#footer ul.social li:hover a i {
+font-size:30px;
+margin-top:-10px;
+}
+
+#footer ul.social li a,
+#footer ul.quick-links li a{
+color:#ffffff;
+}
+
+#footer ul.social li a:hover{
+color:#eeeeee;
+}
+
+#footer ul.quick-links li{
+padding: 3px 0;
+-webkit-transition: .5s all ease;
+-moz-transition: .5s all ease;
+transition: .5s all ease;
+}
+
+#footer ul.quick-links li:hover{
+padding: 3px 0;
+margin-left:5px;
+font-weight:700;
+}
+
+#footer ul.quick-links li a i{
+margin-right: 5px;
+}
+
+#footer ul.quick-links li:hover a i {
+font-weight: 700;
+}
+
+@media (max-width:767px){
+#footer h5 {
+		padding-left: 0;
+		border-left: transparent;
+		padding-bottom: 0px;
+		margin-bottom: 10px;
+	}
+}
+
+/* Responsive Footer - Gotten viewport sizes from developer console */
+/* Tablet size */
+@media (max-width: 768px) {
+.col-md-4{
+	width: 100% !important;
+}
+}
+
+/* Mobile L size */
+@media (max-width: 425px) {
+#logo a img{
+	width: 100%;
+}
+}
+
+@media (max-width:768px) {
+  .containers img {
+    height: 450px;
+  }
+}

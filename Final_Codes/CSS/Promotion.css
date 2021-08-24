@@ -1,0 +1,14 @@
+.Details {
+    display: inline-flex;
+}
+
+.pic img{
+  width: 50%;
+  margin-right: 75px;
+}
+p{
+  width:50%;
+}
+.main{
+  margin-top: 2%;
+}
